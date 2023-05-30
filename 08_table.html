@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* internal style */
+        table, td, th {
+             border: 1px solid black
+        }
+        /*
+        th{
+             border: 1px solid black
+        }
+        td{
+             border: 1px solid black
+        }
+         */
+    </style>
+</head>
+<body>
+    <!-- 표: table -->
+    <!-- 행: tr -->
+    <!-- 셀 : td(데이터), th(열제목) -->
+    <table>
+        <thead>
+        <tr>
+            <th>이름</th>
+            <th>연락처</th>
+            <th>이메일</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>유성수</th>
+            <th>010-2070-4965</th>
+            <th>elcane2@naver.com</th>
+        </tr>
+        <tr>
+            <th>염보성</th>
+            <th>010-0000-0000</th>
+            <th>yuam@naver.com</th>
+        </tr>
+        <tr>
+            <th>정윤종</th>
+            <th>010-0000-0001</th>
+            <th>jeong@naver.com</th>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <td>학년</td>
+                <td>반</td>
+                <td>학생수</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">1학년</td>
+                <td>1반</td>
+                <td>18명</td>
+            </tr>
+            <tr>
+                <!-- <td>1학년</td> -->
+                <td>2반</td>
+                <td>19명</td>
+            </tr>
+            <tr>
+                <!-- <td>1학년</td> -->
+                <td>3반</td>
+                <td>18명</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">합계</td>
+                <!-- <td></td> -->
+                <td>55명</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
